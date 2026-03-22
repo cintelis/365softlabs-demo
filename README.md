@@ -86,3 +86,24 @@ If you need fresh baseline wiring:
 ```powershell
 npm create cloudflare@latest -- 365softlabs-demo --framework=next --experimental
 ```
+
+## Security & Secrets
+
+This repository is public. Keep credentials and private infrastructure values out of source control.
+
+Never commit:
+
+- API tokens, Cloudflare credentials, or secret environment values
+- `.env*` files with real values
+- internal-only service URLs if they are not intended for public disclosure
+
+Use placeholders in shared docs/examples:
+
+- `<MVP_API_BASE_URL>`
+- `<CLOUDFLARE_ACCOUNT_ID>`
+- `<PAGES_PROJECT_NAME>`
+
+Recommended before push:
+
+- Run secret scanning (for example GitHub secret scanning or gitleaks)
+- Validate config files do not include real secrets
