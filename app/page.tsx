@@ -173,7 +173,7 @@ export default function HomePage() {
 
   const [capabilityName, setCapabilityName] = useState("xai docs");
   const [capabilityResult, setCapabilityResult] = useState<CapabilityResult | null>(null);
-  const [offlineTarget, setOfflineTarget] = useState("tiktok-business");
+  const [offlineTarget, setOfflineTarget] = useState("business-docs");
   const [offlinePlanResult, setOfflinePlanResult] = useState<OfflinePlanResult | null>(null);
   const [copyStatus, setCopyStatus] = useState("");
 
@@ -406,8 +406,8 @@ export default function HomePage() {
             <>
               <label style={{ ...styles.label, marginTop: 10 }}>Offline Reference Target</label>
               <select style={styles.input} value={offlineTarget} onChange={(e) => setOfflineTarget(e.target.value)}>
-                <option value="tiktok-business">tiktok-business</option>
-                <option value="tiktok-developers">tiktok-developers</option>
+                <option value="business-docs">business-docs</option>
+                <option value="developer-docs">developer-docs</option>
               </select>
 
               <div style={styles.row}>
@@ -476,6 +476,8 @@ export default function HomePage() {
     </main>
   );
 }
+
+
 
 
 
