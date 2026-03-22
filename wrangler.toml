@@ -1,0 +1,5 @@
+name = "365softlabs-demo"
+compatibility_date = "2026-03-22"
+
+# OpenNext will output worker bundle during build.
+# Keep this config minimal and extend bindings as needed.

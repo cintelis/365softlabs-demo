@@ -1,0 +1,11 @@
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  margin: 0;
+  background: #0b0f17;
+  color: #e8efff;
+}
+
+a { color: #7bd3ff; }
